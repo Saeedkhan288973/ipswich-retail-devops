@@ -32,3 +32,6 @@ jobs:
           source venv/bin/activate
           cd ipswich_ecommerce
           python manage.py test
+
+  - name: Deploy to Render
+  run: curl -X POST -d {} https://api.render.com/deploy/srv-XXXXX
