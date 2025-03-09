@@ -21,7 +21,7 @@ jobs:
             source venv/bin/activate
             pip install --upgrade pip
             pip install -r requirements.txt
-            cd ipswich_ecommerce/shop
+            cd ipswich_ecommerce/manage.py
             python manage.py test
 
       - name: Run Tests
